@@ -1,0 +1,29 @@
+/* hide eveything in body except a class; */
+body > *:not(.printable) {
+    display: none!important;
+  
+}
+
+/* Not needed if already showing  still*/
+body > .printable {
+    display: block!important;
+margin: 0!important;
+
+}
+/* body > .printable {
+    display: block;
+justify-content: center;
+align-items: center;
+
+} */
+
+/* style while print */
+@media print {
+
+#invoice {
+    box-shadow: none;
+}
+
+
+
+}
